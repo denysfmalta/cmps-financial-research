@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+}
+
+main > div {
+    width: 50%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.welcome > h1 {
+    font-size: 111px;
+    font-weight: 700;
+    font-family: Roboto;
+    margin-bottom: 44px;
+}
+
+.welcome > h2 {
+    font-size: 29px;
+    font-weight: 700;
+    font-family: Roboto;
+    margin-bottom: 70px;
+}
+
+.welcome > a {
+    width: 199px;
+    height: 36px;
+    background-color: #3EB25E;
+    border-radius: 35px;
+    line-height: 36px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
