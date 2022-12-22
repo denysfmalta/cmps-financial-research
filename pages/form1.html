@@ -12,10 +12,10 @@
 </head>
 <body>
     <main>
-        <div class="image-container">
+        <section class="image-container">
             <img src="../assets/images/two.png"/>
-        </div>
-        <div class="">
+        </section>
+        <section class="text-body">
             <h3>What is the status of your account?</h3>
             <select name="status">
                 <option value="did-not-create">I did not created an account yet.</option>
@@ -23,15 +23,19 @@
                 <option value="lost-access">I have an account, but have lost my access to it.</option>
             </select>
             <h3>In which financial markets do you operate?</h3>
-            <input type="radio" name="markets" value="stock_market"/> stock market<br/>
-            <input type="radio" name="markets" value="foreign_exchange"/>foreign exchange<br/>
-            <input type="radio" name="markets" value="commodity"/>commodity<br/>
-            <input type="radio" name="markets" value="bond_market"/>bond market<br/>
-            <input type="radio" name="markets" value="cryptocurrency_market"/>cryptocurrency market<br/>
+            <ol>
+                <input type="radio" name="markets" value="stock_market"/>stock market<br/>
+                <input type="radio" name="markets" value="foreign_exchange"/>foreign exchange<br/>
+                <input type="radio" name="markets" value="commodity"/>commodity<br/>
+                <input type="radio" name="markets" value="bond_market"/>bond market<br/>
+                <input type="radio" name="markets" value="cryptocurrency_market"/>cryptocurrency market<br/>
+            </ol>
+            <section class="buttons">
             <a href="start.html">Back</a>
             <a href="form2.html">Next</a>
             <a href="form2.html">Skip</a>
-        </div>
+            </section>
+        </section>
     </main>
 </body>
 </html>

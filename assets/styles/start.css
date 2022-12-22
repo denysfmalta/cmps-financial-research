@@ -5,11 +5,18 @@
 }
 main {
     margin: 0 auto;
+    height: 100vh;
     max-width: 1280px;
     display: flex;
 }
 
 main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div > section {
     width: 50%;
 }
 
@@ -17,35 +24,40 @@ main > div {
     display: flex;
     justify-content: flex-end;
 }
-
 .image-container > img {
     max-width: 553px;
 }
 
-.text {
+.text-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    font-family: Roboto;
-}
-
-.text > h2 {
-    font-weight: 700;
-    font-size: 39px;
-    line-height: 46px;
     text-align: center;
-    margin-bottom: 14px;
+    align-items: center;
 }
 
-.text > p {
+.text-body > div {
+    justify-content: space-between!important;
+}
+
+.text-body > h2 {
+    font-size: 29px;
+    font-weight: 700;
+    font-family: Roboto;
+    margin-bottom: 28px;
+}
+
+.text-body > p {
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 28px;
     line-height: 33px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-#button1 {
+.text-body > div > a {
+    display: inline-block;
     width: 199px;
     height: 36px;
     background-color: #3EB25E;
@@ -58,19 +70,8 @@ main > div {
     color: white;
 }
 
- #button2 {
-    width: 199px;
-    height: 36px;
-    background-color: #3EB25E;
-    border-radius: 35px;
-    line-height: 36px;
-    font-family: Roboto;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 22px;
-    color: white;
+.text-body > div > a:hover {
+    background-color: #FFFF7D;
+    color: black;
 }
-
-
-
 

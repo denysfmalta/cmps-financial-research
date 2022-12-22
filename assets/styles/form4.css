@@ -9,10 +9,38 @@ main {
     display: flex;
 }
 
-main > div {
+main > section {
     width: 50%;
 }
 
 div > input {
     display: flex;
+}
+
+h3{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.text-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.text-body > a {
+    width: 199px;
+    height: 36px;
+    background-color: #3EB25E;
+    border-radius: 35px;
+    line-height: 36px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
 }

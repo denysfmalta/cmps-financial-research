@@ -9,7 +9,7 @@ main {
     display: flex;
 }
 
-main > div {
+main > section {
     width: 50%;
 }
 
@@ -22,7 +22,7 @@ main > div {
     max-width: 431px;
 }
 
-.welcome {
+.text-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,21 +30,21 @@ main > div {
     align-items: center;
 }
 
-.welcome > h1 {
+.text-body> h1 {
     font-size: 111px;
     font-weight: 700;
     font-family: Roboto;
     margin-bottom: 44px;
 }
 
-.welcome > h2 {
+.text-body > h2 {
     font-size: 29px;
     font-weight: 700;
     font-family: Roboto;
     margin-bottom: 70px;
 }
 
-.welcome > a {
+.text-body > a {
     width: 199px;
     height: 36px;
     background-color: #3EB25E;
@@ -57,15 +57,32 @@ main > div {
     color: white;
 }
 
+.text-body > a > .hover {
+    display: none;
+}
+
+a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
+a:hover .before {
+    display: none;
+}
+
+a:hover .hover {
+    display: inline;
+}
+
 @media (max-width: 1280px) {
     main {
         flex-direction: column;
     }
-
+    
     main > div {
         width: 100%;
     }
-
+    
     .welcome > h1 {
         font-size: 53px;
         line-height: 62px;
