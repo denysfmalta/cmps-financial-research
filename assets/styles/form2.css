@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 main {
     margin: 0 auto;
     max-width: 1280px;
@@ -20,10 +21,11 @@ main > section {
 
 h3{
     font-family: 'Roboto';
+    margin-left: 12vh;
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
-    align-self: flex-start;
+    align-self: flex-end;
     text-align: left;
     margin-bottom: 12px;
 }
@@ -51,8 +53,9 @@ h3{
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
-    text-overflow: '';
+    text-overflow: '...';
     align-self: flex-start;
+    margin-left: 10vh;
     margin-top: 8px;
     margin-bottom: 29px;
 }
@@ -60,6 +63,10 @@ h3{
 .invest:hover{
     background-image: url(../images/arrow-hover.png);
     border: 1px solid rgba(71, 82, 66, 1);
+}
+
+.invest:focus{
+    background-color: transparent;
 }
 
 .text-body > a {
@@ -79,7 +86,6 @@ h3{
 
 .text-body >  .back-next > a {
     display: inline-block;
-    direction:ltr;
     width: 199px;
     height: 36px;
     background-color: #3EB25E;
@@ -95,19 +101,45 @@ h3{
 }
 
 a + a {
+ margin-top: 20px;
  margin-left: 27px;
 }
 
-.text-body > ol {
+ol {
     display: inline;
     text-align: left;
-    align-self: flex-start;
     font-family: Roboto;
     font-size: 26px;
     margin-bottom: 32px;
 }
 
-.text-body > ol > input[type="radio"]{
-    background:solid rgba(62, 178, 94, 0.3);
+[type="radio"] {
+    opacity: 0;
+}
+
+[type="radio"] + label {
+    position: relative;
+   
+}
+
+
+[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    height: 26px;
+    width: 26px;
+    background: rgba(62, 178, 94, 0.3);
+    left: -50px;
+}
+
+[type="radio"]:checked + label::before {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    height: 26px;
+    width: 26px;
+    background: rgba(62, 178, 94, 1);
+    left: -50px;
 }
 
