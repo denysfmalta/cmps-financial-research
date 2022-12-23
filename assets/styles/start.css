@@ -37,11 +37,14 @@ main > div > section {
 }
 
 .text-body > div {
-    justify-content: space-between!important;
+    justify-content: space-between;
 }
 
 .text-body > h2 {
-    font-size: 29px;
+    width: 473px;
+    height: 101px;
+    line-height: 46px;
+    font-size: 39px;
     font-weight: 700;
     font-family: Roboto;
     margin-bottom: 28px;
@@ -51,6 +54,8 @@ main > div > section {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 28px;
+    width: 443px;
+    height: 169px;
     line-height: 33px;
     text-align: center;
     margin-bottom: 20px;
@@ -75,3 +80,11 @@ main > div > section {
     color: black;
 }
 
+a+a {
+    margin-top: 32px;
+    margin-left: 27px;
+  }
+
+  .image-container + .text-body{
+    margin-left: 105px;
+  }

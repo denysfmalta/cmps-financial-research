@@ -23,6 +23,9 @@ h3{
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
+    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 12px;
 }
 
 .text-body {
@@ -33,7 +36,50 @@ h3{
     align-items: center;
 }
 
+.invest {
+    background-image: url("../images/arrow.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: center;
+    font-size: 27px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    height: 42px;
+    width: 75vh;
+    padding-left: 10%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    align-self: flex-start;
+    margin-top: 8px;
+    margin-bottom: 29px;
+}
+
+.invest:hover{
+    background-image: url(../images/arrow-hover.png);
+    border: 1px solid rgba(71, 82, 66, 1);
+}
+
 .text-body > a {
+    display: inline-block;
+    width: 418px;
+    height: 36px;
+    background-color: #3EB25E;
+    border-radius: 35px;
+    line-height: 36px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    align-self: center;
+}
+
+.text-body >  .back-next > a {
+    display: inline-block;
+    direction:ltr;
     width: 199px;
     height: 36px;
     background-color: #3EB25E;
@@ -44,4 +90,24 @@ h3{
     font-weight: 700;
     font-size: 22px;
     color: white;
+    align-self: flex-start;
+    margin-bottom: 15px;
 }
+
+a + a {
+ margin-left: 27px;
+}
+
+.text-body > ol {
+    display: inline;
+    text-align: left;
+    align-self: flex-start;
+    font-family: Roboto;
+    font-size: 26px;
+    margin-bottom: 32px;
+}
+
+.text-body > ol > input[type="radio"]{
+    background:solid rgba(62, 178, 94, 0.3);
+}
+
