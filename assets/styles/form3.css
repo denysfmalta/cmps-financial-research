@@ -22,6 +22,7 @@ h3{
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
+    margin-bottom: 20px;
 }
 
 .text-body {
@@ -33,6 +34,27 @@ h3{
 }
 
 .text-body > a {
+    display: inline-block;
+    width: 418px;
+    height: 36px;
+    background-color: #3EB25E;
+    border-radius: 35px;
+    line-height: 36px;
+    font-family: Roboto;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    align-self: center;
+}
+
+a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
+.text-body >  .back-next > a {
+    display: inline-block;
     width: 199px;
     height: 36px;
     background-color: #3EB25E;
@@ -43,4 +65,32 @@ h3{
     font-weight: 700;
     font-size: 22px;
     color: white;
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+.text-body >  .back-next > a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
+a + a {
+    margin-top: 20px;
+    margin-left: 27px;
+}
+
+input {
+    width: 459px;
+    height: 225px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-bottom: 43px;
+}
+
+input:hover{
+border: 1px solid #475242;
+}
+
+input:focus{
+    outline: 0;
 }

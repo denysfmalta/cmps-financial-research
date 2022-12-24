@@ -75,6 +75,11 @@ main > div > section {
     color: white;
 }
 
+a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
 .text-body > div > a:hover {
     background-color: #FFFF7D;
     color: black;

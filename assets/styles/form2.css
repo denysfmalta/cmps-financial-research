@@ -66,7 +66,7 @@ h3{
 }
 
 .invest:focus{
-    background-color: transparent;
+    outline: 0;
 }
 
 .text-body > a {
@@ -84,6 +84,11 @@ h3{
     align-self: center;
 }
 
+a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
 .text-body >  .back-next > a {
     display: inline-block;
     width: 199px;
@@ -98,6 +103,11 @@ h3{
     color: white;
     align-self: flex-start;
     margin-bottom: 15px;
+}
+
+.text-body >  .back-next > a:hover {
+    background-color: #FFFF7D;
+    color: black;
 }
 
 a + a {

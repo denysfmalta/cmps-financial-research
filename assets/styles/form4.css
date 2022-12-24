@@ -13,7 +13,7 @@ main > section {
     width: 50%;
 }
 
-div > input {
+input {
     display: flex;
 }
 
@@ -22,6 +22,9 @@ h3{
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-self: flex-start;
 }
 
 .text-body {
@@ -33,7 +36,7 @@ h3{
 }
 
 .text-body > a {
-    width: 199px;
+    width: 418px;
     height: 36px;
     background-color: #3EB25E;
     border-radius: 35px;
@@ -43,4 +46,42 @@ h3{
     font-weight: 700;
     font-size: 22px;
     color: white;
+    margin-bottom: 14px;
+    align-self: flex-start;
+}
+
+.text-body >  .back-next > a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
+a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
+input {
+    width: 459px;
+    height: 52px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+input:hover {
+    border: 1px solid rgba(71, 82, 66, 1);
+}
+
+input:focus {
+    outline: 0;
+}
+
+#age {
+    margin-bottom: 44px;
 }
