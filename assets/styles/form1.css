@@ -3,17 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 main {
     margin: 0 auto;
     max-width: 1280px;
     display: flex;
+    height: 100vh;
+    align-items: center;
 }
 
-main > section {
+main>div {
+    width: 100%;
+    display: flex;
+}
+
+main>div>section {
     width: 50%;
 }
 
-h3{
+h3 {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 26px;
@@ -39,28 +47,26 @@ h3{
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     height: 42px;
-    width: 75vh;
     padding-left: 10%;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '...';
     align-self: flex-start;
-    margin-left: 10vh;
     margin-top: 8px;
     margin-bottom: 29px;
 }
 
-.status:hover{
+.status:hover {
     background-image: url(../images/arrow-hover.png);
     border: 1px solid rgba(71, 82, 66, 1);
 }
 
-.status:focus{
+.status:focus {
     outline: 0;
 }
 
-.text-body > a {
+.text-body>a {
     display: inline-block;
     width: 418px;
     height: 36px;
@@ -75,7 +81,7 @@ h3{
     align-self: center;
 }
 
-.text-body > a {
+.text-body>a {
     width: 199px;
     height: 36px;
     background-color: #3EB25E;
@@ -88,49 +94,51 @@ h3{
     color: white;
 }
 
-.text-body > ol {
+.text-body>ol {
     text-decoration: none;
 }
 
-
 ol {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
     text-align: left;
     font-family: Roboto;
     font-size: 26px;
     margin-bottom: 32px;
+    margin-left: 50px;
 }
 
 [type="radio"] {
     opacity: 0;
 }
 
-[type="radio"] + label {
+[type="radio"]+label {
     position: relative;
 }
 
 
-[type="radio"] + label::before {
+[type="radio"]+label::before {
     content: "";
     position: absolute;
-    border-radius: 50%;  
+    border-radius: 50%;
     height: 26px;
     width: 26px;
     background: rgba(62, 178, 94, 0.3);
     left: -50px;
 }
 
-[type="radio"]:checked + label::before {
+[type="radio"]:checked+label::before {
     content: "";
     position: absolute;
-    border-radius: 50%;  
+    border-radius: 50%;
     height: 26px;
     width: 26px;
     background: rgba(62, 178, 94, 1);
     left: -50px;
 }
 
-.text-body > a {
+.text-body>a {
     display: inline-block;
     width: 418px;
     height: 36px;
@@ -150,7 +158,7 @@ a:hover {
     color: black;
 }
 
-.text-body >  .back-next > a {
+.text-body>.back-next>a {
     display: inline-block;
     width: 199px;
     height: 36px;
@@ -166,13 +174,12 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.text-body >  .back-next > a:hover {
+.text-body>.back-next>a:hover {
     background-color: #FFFF7D;
     color: black;
 }
 
-a + a {
+a+a {
     margin-top: 20px;
     margin-left: 27px;
-   }
-   
+}
