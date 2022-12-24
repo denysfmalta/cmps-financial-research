@@ -113,7 +113,7 @@ ol {
 [type="radio"] + label::before {
     content: "";
     position: absolute;
-    border-radius: 5px;
+    border-radius: 50%;  
     height: 26px;
     width: 26px;
     background: rgba(62, 178, 94, 0.3);
@@ -123,7 +123,7 @@ ol {
 [type="radio"]:checked + label::before {
     content: "";
     position: absolute;
-    border-radius: 5px;
+    border-radius: 50%;  
     height: 26px;
     width: 26px;
     background: rgba(62, 178, 94, 1);
