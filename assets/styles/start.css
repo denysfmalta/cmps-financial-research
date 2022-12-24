@@ -94,3 +94,14 @@ a+a {
     margin-left: 105px;
 
   }
+
+  @media (max-width: 1280px) {
+    main {
+        flex-direction: column;
+    }
+    
+    main > div {
+        width: 100%;
+        flex-direction: column;
+    }
+  }

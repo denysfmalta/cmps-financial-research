@@ -71,12 +71,35 @@ a:hover {
         flex-direction: column;
     }
     
-    main > div {
+    main > section {
         width: 100%;
+        justify-content: flex-start!important;
     }
     
     .welcome > h1 {
         font-size: 53px;
         line-height: 62px;
     }
+    
+    .image-container > img {
+        padding: 0 15px;
+        width: 100%!important;
+        max-width: 416px;
+        left: 59px;
+top: 56px;
+
+
+    }
+
+    h1 {
+        font-size: 53px!important;
+        margin-top: 25px;
+    }
+
+    h2 {
+        font-size: 24px!important;
+        margin-bottom: 44px!important;
+    }
+
+    
 }
