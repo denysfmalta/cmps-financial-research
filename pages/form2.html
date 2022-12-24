@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,41 +8,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/form2.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/styles/form2.css" />
     <title></title>
 </head>
+
 <body>
     <main>
-        <section class="image-container">
-            <img src="../assets/images/three.png"/>
-        </section>
-        <section class="text-body">
-            <div class="test">
-                <h3>How do you decide to invest?</h3>
-                
-                <select class="invest" name="invest">
-                    <option value="not-invested">I have not invested yet.</option>
-                    <option value="lower-risk">I usually go to the most secure investment option.</option>
-                    <option value="adventurous">I'm attracted to options with high returns, even if it imposes more risk.</option>
+        <div>
+            <section class="image-container">
+                <img src="../assets/images/three.png" />
+            </section>
+            <section class="text-body">
+                <h3>What is the status of your account?</h3>
+                <select class="status" name="status">
+                    <option value="books-and-articles">I have not invested yet.</option>
+                    <option value="youtube-tutorial-videos">I usually go to the most secure investment option.</option>
+                    <option value="online-or-face-to-face-courses">I'm attracted to options with high returns, even if
+                        it imposes more risk.</option>
                 </select>
-                <h3>What resources have you used or are you using for your training?</h3>
-            </div>
+                <h3>In which financial markets do you operate?</h3>
                 <ol>
-                        <input type="radio" id="books" name="resources"/>
-                        <label for="books">Books and articles</label><br/>
-                        <input type="radio" id="youtube" name="resources"/>
-                        <label for="youtube">YouTube tutorial videos</label><br/>
-                        <input type="radio" id="courses" name="resources"/>
-                        <label for="courses">online or face to face courses</label><br/>
-                        <input type="radio" id="experience" name="resources"/>
-                        <label for="experience">experience with little investment</label><br/>
+                    <input type="checkbox" id="markets" name="markets" />
+                    <label for="markets">Books and articles</label>
+                    <input type="checkbox" id="foreign" name="markets" />
+                    <label for="foreign">YouTube tutorial videos</label>
+                    <input type="checkbox" id="commodity" name="markets" />
+                    <label for="commodity">Online or face to face courses</label>
+                    <input type="checkbox" id="bond" name="markets" />
+                    <label for="bond">Experience with little investment</label>
                 </ol>
-            <div class="back-next">
-                <a href="form1.html">Back</a>
-                <a href="form3.html">Next</a>
-            </div>
-            <a href="form3.html">Skip</a>
-        </section>
+                <div class="back-next">
+                    <a href="start.html">Back</a>
+                    <a href="form2.html">Next</a>
+                </div>
+                <a href="form2.html">Skip</a>
+
+            </section>
+        </div>
     </main>
 </body>
+
 </html>
