@@ -27,6 +27,8 @@ h3 {
     font-size: 26px;
     line-height: 30px;
     align-self: flex-start;
+    text-align: left;
+    max-width: 466px;
 }
 
 .text-body {
@@ -34,7 +36,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: center;
     margin-top: 50px;
 }
 
@@ -160,9 +161,10 @@ a:hover {
 }
 
 
-.text-body>.back-next{
+.text-body>.back-next {
     align-self: flex-start;
 }
+
 .text-body>.back-next>a {
     display: inline-block;
     width: 199px;
@@ -179,7 +181,7 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.text-body>.skip > a{
+.text-body>.skip>a {
     display: inline-block;
     width: 418px;
     height: 36px;
@@ -194,7 +196,7 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.text-body>.skip{
+.text-body>.skip {
     align-self: flex-start;
 }
 
@@ -205,9 +207,15 @@ a:hover {
 
 textarea {
     width: 459px;
-height: 225px;
-border: 1px solid rgba(0, 0, 0, 0.25);
-border-radius: 20px;
+    height: 225px;
+    border-radius: 20px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 42px;
 }
 
 
