@@ -49,7 +49,7 @@ h3 {
     border: 1px solid rgba(0, 0, 0, 0.25);
     height: 42px;
     padding-left: 10%;
-    width: 37vw;
+    width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
@@ -160,9 +160,20 @@ a:hover {
     color: black;
 }
 
-.text-body>.back-next{
-    align-self: flex-start;
+.text-body>.back-next {
+    margin-bottom: 15px;
 }
+
+.text-body>.skip {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.text-body>.back-next>a:last-child {
+    margin-left: 30px;
+}
+
 .text-body>.back-next>a {
     display: inline-block;
     width: 199px;
@@ -176,10 +187,9 @@ a:hover {
     font-size: 22px;
     color: white;
     align-self: flex-start;
-    margin-bottom: 15px;
 }
 
-.text-body>.skip > a{
+.text-body>.skip>a {
     display: inline-block;
     width: 418px;
     height: 36px;
@@ -194,7 +204,7 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.text-body>.skip{
+.text-body>.skip {
     align-self: flex-start;
 }
 
@@ -203,7 +213,50 @@ a:hover {
     color: black;
 }
 
-a+a {
-    margin-top: 20px;
-    margin-left: 27px;
+.text-body>.skip>a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
+.back-next>a:last-child {}
+
+@media (max-width: 1280px) {
+    main>div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-top: 260px;
+    }
+
+    .image-container>img {
+        width: 100%;
+        padding: 0 45px;
+    }
+
+    .text-body {
+        width: 100%;
+        padding: 0 90px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px !important;
+        height: 26px !important;
+        line-height: 26px !important;
+    }
+
+    select {
+        font-size: 16px !important;
+        height: 33px;
+    }
+
+    label {
+        font-size: 16px;
+    }
 }

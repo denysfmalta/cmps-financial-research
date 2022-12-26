@@ -232,3 +232,30 @@ input {
     width: 10vw;
     align-self: flex-start;
 }
+
+.text-body>.skip>a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
+@media (max-width: 1280px) {
+    .image-container {
+    }
+
+    main{
+        flex-direction: column;
+    }
+ 
+
+    main>div {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .text-body>.back-next>a:last-child {
+        margin-left: 0 !important;
+    }
+}

@@ -17,10 +17,6 @@ main>div {
     display: flex;
 }
 
-main>div>section {
-    width: 50%;
-}
-
 .image-container {
     display: flex;
     justify-content: flex-end;
@@ -90,14 +86,21 @@ a:hover {
     color: black;
 }
 
+
 @media (max-width: 1280px) {
-    main {
+    main>div {
         flex-direction: column;
+        width: 100%;
     }
 
-    main>section {
+    .image-container {
         width: 100%;
-        justify-content: flex-start !important;
+        margin-top: 260px;
+    }
+
+    .image-container>img {
+        width: 100%;
+        padding: 0 45px;
     }
 
     .welcome>h1 {

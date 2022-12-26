@@ -223,3 +223,30 @@ a+a {
     margin-top: 20px;
     margin-left: 27px;
 }
+
+.text-body>.skip>a:hover {
+    background-color: #FFFF7D;
+    color: black;
+}
+
+@media (max-width: 1280px) {
+    .image-container {
+        margin-top: 260px;
+    }
+
+    main>div {
+        flex-direction: column;
+    }
+
+    main>div>section {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .text-body>.back-next>a:last-child {
+        margin-left: 0 !important;
+    }
+}
