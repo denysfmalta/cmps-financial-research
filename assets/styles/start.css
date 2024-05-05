@@ -1,48 +1,36 @@
-* {
-    padding: 0;
-    margin: 0;
+*{
     box-sizing: border-box;
 }
 
-main {
-    margin: 0 auto;
-    max-width: 1280px;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-}
-
-main>div {
+/* main>div {
     width: 50%;
     display: flex;
+} */
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%
 }
 
-.image-container {
-    display: flex;
-    justify-content: flex-end;
+
+
+.box {
+  border: 1px solid black; 
 }
 
-.image-container>img {
+/*.image-container>img {
     max-width: 553px;
-}
+}  */
 
-.text-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 50px;
-}
 
-.text-body>div {
+div {
     width: 100%;
     padding: 0 20px;
-    display: flex;
     justify-content: space-between;
 }
 
-.text-body>h2 {
+h2 {
     width: 473px;
     height: 101px;
     line-height: 46px;
@@ -52,7 +40,7 @@ main>div {
     margin-bottom: 28px;
 }
 
-.text-body>p {
+p {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 28px;
@@ -62,7 +50,7 @@ main>div {
     margin-bottom: 20px;
 }
 
-.text-body>div>a {
+div>a {
     display: inline-block;
     width: 199px;
     height: 36px;
@@ -84,59 +72,4 @@ a:hover {
 .text-body>div>a:hover {
     background-color: #FFFF7D;
     color: black;
-}
-
-
-@media (max-width: 1280px) {
-    main>div {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .image-container {
-        width: 100%;
-        margin-top: 260px;
-    }
-
-    .image-container>img {
-        width: 100%;
-        padding: 0 45px;
-    }
-
-    .welcome>h1 {
-        font-size: 53px;
-        line-height: 62px;
-    }
-
-    .image-container {
-        margin-top: 51px;
-    }
-
-    .image-container>img {
-        width: 100% !important;
-    }
-
-    h2 {
-        font-size: 30px !important;
-        width: 100% !important;
-        padding: 0 26px;
-    }
-
-    p {
-        font-size: 18px !important;
-        width: 100% !important;
-        padding: 0 66px;
-    }
-
-    .image-container {
-        justify-content: center !important;
-    }
-
-    .text-body {
-        padding-bottom: 88px !important;
-    }
-
-    .text-body>div {
-        justify-content: space-evenly;
-    }
 }
